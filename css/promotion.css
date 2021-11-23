@@ -1,0 +1,162 @@
+
+ .promotion{
+     display: grid;
+     grid-template-columns: 50% 50%;
+     grid-template-rows: auto;
+ }
+.details{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.detailsBox{
+    max-width: 27.5rem;
+}
+.detailsBox h2{
+    font-family: 'Fraunces', serif;
+    font-size: 2.125rem;
+    margin-bottom: 3rem;
+    color: var(--very-dark-desaturated-blue);
+}
+.detailsBox p{
+    font-family: 'Barlow', sans-serif;
+    font-size: 1rem;
+    margin-bottom: 3rem;
+    line-height: 1.75rem;
+    color: var(--very-dark-grayish-blue);
+}
+
+.detailsBox a{
+    font-family: 'Fraunces', serif;
+    text-transform: uppercase;
+    color: var(--very-dark-desaturated-blue);
+    position: relative;
+}
+a.underline1::after{
+    position: absolute;
+    left: -6px;
+    bottom: -2px;
+    content: "";
+    width: 7.8rem;
+    height: 0.4375rem;
+    background-color: var(--yellow);
+    border-radius: 4px;
+    z-index: -3;
+    opacity: 0.3;
+}
+a.underline1:hover::after{
+opacity: 1;
+}
+a.underline2::after{
+    position: absolute;
+    left: -6px;
+    bottom: -2px;
+    content: "";
+    width: 7.8rem;
+    height: 0.4375rem;
+    background-color: var(--soft-red);
+    border-radius: 4px;
+    z-index: -3;
+    opacity: 0.2;
+
+}
+a.underline2:hover::after{
+    opacity: 1;
+}
+@media screen and (min-width:768px ) and (max-width:960px) {
+    .details{
+        padding: 1rem;
+    }
+    .detailsBox h2{
+        font-size: 1.8125rem;
+        margin-bottom: 2rem;
+    }
+    .detailsBox p{
+        
+        font-size: 0.875rem;
+        margin-bottom: 3rem;
+        line-height: 1.75rem;
+        
+    }
+    .detailsBox a{
+        font-size: 0.9rem;
+    }
+    a.underline1::after{
+        width: 7.1rem;
+    }
+    a.underline2::after{
+        width: 7.1rem;
+    }
+}
+
+@media screen and (min-width:616px) and (max-width:767px) {
+    .detailsBox{
+       padding-left: 1.8rem;
+       padding-right: 1.8rem;
+       padding-top: 1.8rem;
+    }
+    .detailsBox h2{
+        font-size: 1.5125rem;
+        margin-bottom: 1.15rem;
+    }
+    .detailsBox p{
+        
+        font-size: 0.875rem;
+        margin-bottom: 1.6rem;
+        line-height: 1.35rem;
+        
+    }
+    .detailsBox a{
+        font-size: 0.9rem;
+    }
+    a.underline1::after{
+        width: 7.1rem;
+    }
+    a.underline2::after{
+        width: 7.1rem;
+    }
+}
+@media screen and (max-width: 615px) {
+    .promotion{
+        grid-template-columns: 100%;
+
+    }
+    .details{
+        order: 2;
+        padding-left: 2rem;
+        padding-right: 2rem;
+        margin-bottom: 3.45rem;
+    }
+    .promotion picture{
+        order: 1;
+        max-height: 19.375rem;
+        overflow: hidden;
+    }
+    .detailsBox{
+        
+        margin-top: 4.25rem;
+        text-align: center;
+    }
+
+    .detailsBox h2{
+        font-size: 2rem;
+        margin-bottom: 2.25rem;
+    }
+    .detailsBox p{
+        
+        font-size: 1rem;
+        margin-bottom: 2.45rem;
+        line-height: 1.475rem;
+        
+    }
+    .detailsBox a{
+        font-size: 0.9rem;
+    }
+    a.underline1::after{
+        width: 7rem;
+    }
+    a.underline2::after{
+        width: 7rem;
+    }
+}

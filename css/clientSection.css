@@ -1,0 +1,91 @@
+.client{
+    padding: 9.875rem 0;
+    display: flex;
+    justify-content: center;
+}
+.clientTestimonials{
+    max-width: 72.5rem;
+    text-align: center;
+}
+.clientTestimonials h1{
+    font-family: 'Fraunces', serif;
+    font-weight: 900;
+    letter-spacing: 0.475rem;
+    margin-bottom: 5.1875rem;
+}
+.clientCards{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2.5rem;
+}
+.clientCard{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.clientImage{
+    width: 4.625rem;
+    height: 4.625rem;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-bottom: 4.0625rem;
+}
+
+.clientComment{
+    font-size: 1rem;
+    font-family: 'Barlow', sans-serif;
+    margin-bottom: 4.6875rem;
+    line-height: 1.85rem;
+
+}
+
+.clientName{
+    font-size: 1rem;
+    font-family: 'Fraunces', serif;
+    margin-bottom: 1.25rem;
+}
+.clientPosition{
+    font-size: 0.75rem;
+    font-family: 'Barlow', sans-serif;
+
+}
+
+@media screen and (max-width:1200px) {
+    .client{
+        padding: 6.875rem 1rem;
+    }
+}
+
+@media screen and (max-width: 834px) {
+    .clientCards{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media screen and (max-width:576px) {
+    .client{
+        padding-top: 4.1875rem;
+        padding-bottom: 5.4375rem;
+    }
+    .clientTestimonials h1{
+       font-size: 1rem;
+       letter-spacing: 0.275rem;
+       margin-bottom: 3.9375rem;
+    }
+    .clientCards{
+        grid-template-columns: 1fr;
+        margin-left: 1.75rem;
+        margin-right: 1.75rem;
+        gap: 4rem;
+    }
+    .clientImage{
+        margin-bottom: 2.4375rem;
+    }
+    .clientComment{
+        margin-bottom: 2.625rem;
+    }
+    .clientName{
+        margin-bottom: 1.1875rem;
+    }
+}
