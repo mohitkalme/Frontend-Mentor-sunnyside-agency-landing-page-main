@@ -12,6 +12,7 @@
     font-weight: 900;
     letter-spacing: 0.475rem;
     margin-bottom: 5.1875rem;
+    color: var(--dark-moderate-cyan-footer);
 }
 .clientCards{
     display: grid;
@@ -37,7 +38,7 @@
     font-family: 'Barlow', sans-serif;
     margin-bottom: 4.6875rem;
     line-height: 1.85rem;
-
+    color: var(--very-dark-grayish-blue);
 }
 
 .clientName{
@@ -48,6 +49,7 @@
 .clientPosition{
     font-size: 0.75rem;
     font-family: 'Barlow', sans-serif;
+    color: var(--dark-moderate-cyan-footer);
 
 }
 

@@ -131,7 +131,7 @@ ul > li:not(:first-child) {
 
 .hero {
   position: relative;
-  height: 42.9375rem;
+  height: 49.9375rem;
   background-image: url(../images/desktop/image-header.jpg);
   background-repeat: no-repeat;
   background-size: cover;
